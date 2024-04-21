@@ -15,8 +15,9 @@ exports.addPizza = async (req, res) => {
     let result = await Pizza.create({
         title: req.body.title,
         price: req.body.price,
-        date: req.body.date,
-        image: req.body.image
+        image: req.body.image,
+        desription: req.body.desription,
+        weight: req.body.weight
     })
     res.send('good')
 }
