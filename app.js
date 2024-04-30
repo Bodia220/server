@@ -9,9 +9,19 @@ const URI = `mongodb+srv://Smaki_Maki:fYGv3Xj4Vm4Bvyhc@cluster0.rirhovr.mongodb.
 
 
 const pizzaRouter = require("./routes/pizzaRoutes")
+const sushiRouter = require("./routes/sushiRoutes")
+const drinksRouter = require("./routes/drinksRoutes")
+const salatRouter = require("./routes/salatRoutes")
+const snekRouter = require("./routes/snekRoutes")
+const setsRouter = require("./routes/setsRoutes")
 
 app.use(cors())
 app.use('/api/pizza', pizzaRouter)
+app.use('/api/sushi', sushiRouter)
+app.use('/api/drinks', drinksRouter)
+app.use('/api/salat', salatRouter)
+app.use('/api/snek', snekRouter)
+app.use('/api/sets', setsRouter)
 
 async function main() {
     try {
