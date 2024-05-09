@@ -16,7 +16,9 @@ exports.addSnek = async (req, res) => {
         title: req.body.title,
         price: req.body.price,
         image: req.body.image,
-        weight: req.body.weight
+        weight: req.body.weight,
+        discount: req.body.discount,
+        productType: req.body.productType
     })
     res.send('good')
 }

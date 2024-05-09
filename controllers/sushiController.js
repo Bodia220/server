@@ -19,7 +19,9 @@ exports.addSushi = async (req, res) => {
         price: req.body.price,
         image: req.body.image,
         desription: req.body.desription,
-        weight: req.body.weight
+        weight: req.body.weight,
+        discount: req.body.discount,
+        productType: req.body.productType
     })
     res.send('good')
 }

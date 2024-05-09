@@ -4,10 +4,13 @@ const Schema = mongoose.Schema
 
 const pizzaSchema = new Schema({
     title: String,
-    price: Number,
+    price: Array,
     desription: String,
     image: String,
-    weight: Number
+    weight: Array,
+    bortyk: Array,
+    discount: Array,
+    productType: String
 })
 
 module.exports = mongoose.model('pizza', pizzaSchema)

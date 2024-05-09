@@ -8,7 +8,9 @@ const sushiSchema = new Schema({
     price: Number,
     desription: String,
     image: String,
-    weight: Number
+    weight: Number,
+    discount: Number,
+    productType: String
 })
 
 module.exports = mongoose.model('sushi', sushiSchema)
