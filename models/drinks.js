@@ -7,7 +7,9 @@ const drinksSchema = new Schema({
     title: String,
     price: Number,
     image: String,
-    weight: Number
+    weight: Number,
+    discount: Number,
+    productType: String
 })
 
 module.exports = mongoose.model('drinks', drinksSchema)
